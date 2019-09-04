@@ -13,7 +13,7 @@ void main()
             }
     }
     for(i=0;i<row;i++){
-        for(j=0;j<col;j++){
+        for(j=0;j<col=;j++){
 
             if(a[i][j]!=0)
                 count+=1;
