@@ -1,0 +1,8 @@
+#include<stdio.h>
+void main(){
+	char[20] name;
+	printf("Enter your name : ");
+	scanf("%s",&name);
+	printf("Hello World : %s",name);
+	getch();
+}
