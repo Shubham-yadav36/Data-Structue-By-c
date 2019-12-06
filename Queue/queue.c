@@ -44,5 +44,5 @@ void dequeue(){
 }
 void main(){
 	int ele =10;
-	
+
 }

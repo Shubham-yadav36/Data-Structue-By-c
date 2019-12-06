@@ -1,34 +1,27 @@
 #include<stdio.h>
-void main()
-{
-    int i,j,col,row,count=0;
-    int a[7][6];
-
-    printf("enter the  Numbr of Row and Col matrix less then 7*7 : ");
+#include<conio.h>
+void main(){
+    int smatrix[7][7],col,row,i,j,ele=0;
+    printf("Enter the row and column of matrix(square matrix) : ");
     scanf("%d%d",&row,&col);
-    printf("enter the element for the matrix : ");
+    smatrix[row][col];
+    printf("Enter the element for the matrix : ");
     for(i=0;i<row;i++){
-            for(j=0;j<col;j++){
-                scanf("%d",&a[i][j]);
-            }
+        for(j=0;j<col;j++)
+            scanf("%d",smatrix[i][j]);
     }
     for(i=0;i<row;i++){
-        for(j=0;j<col=;j++){
-
-            if(a[i][j]!=0)
-                count+=1;
+        if(smatrix[i][j]!=0){
+            ele+=1;
         }
     }
-    printf("the 3-Tuple matrix result is :\n");
-    printf("%d  %d  %d\n",row,col,count);
-
+    printf("the converted into sparsh matrix is : \n");
     for(i=0;i<row;i++){
         for(j=0;j<col;j++){
-
-            if(a[i][j]!=0)
-                printf("%d  %d  %d\n",(i+1),(j+1),a[i][j]);
+            if(smatrix[i][j]!=0)
+                printf("%\t%d\t%d\n",row,col,ele);
+                printf("%d\t%d\t%d\n",(i+1),(j+1),smatrix[i][j]);
         }
     }
     getch();
 }
-
